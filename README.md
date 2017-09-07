@@ -6,7 +6,14 @@
 [Check out all the animations here!](https://daneden.github.io/animate.css/)
 
 ## Usage
-Because this version uses mixins, not classes, adding classes to your HTML won't work. To add an animation, call the mixin you want on the relevant element in your SCSS.
+Because this version uses mixins, not classes, adding classes to your HTML won't work. To add an animation, call the mixin you want on the relevant element in your SCSS. If you want an infinite animation, you must also call the animate-infinite mixin.
+
+Example: 
+
+``` p { 	
+	@include bounce;
+	@include animate-infinite; 
+} ```
 
 
 ## License
