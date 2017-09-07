@@ -8,17 +8,19 @@
 ## Usage
 Because this version uses mixins, not classes, adding classes to your HTML won't work. To add an animation, you must call all the relevant mixins.
 
-1. Load the animation definition - `@include keyframes-**animationName**` (see note below)
-2. Call the animation - `@include **animationName** `
+1. Load the animation definition - `@include keyframes-animationName` (see note below)
+2. Call the animation - `@include animationName `
 3. Set it to infinite (optional) - `@include animate-infinite`
 
 Example: 
 
-``` p { 	
+``` 
+p { 	
 	@include keyframes-bounce;
 	@include bounce;
 	@include animate-infinite; 
-} ```
+} 
+```
 
 **Note**: You can load the animation definition either inside your CSS declaration or outside it. The reason I have kept these mixins separate and not included them in the animation call (step 2 above) is because they are quite a lot of lines of code, so if you are using the same animation on many different elements you may want to load the definition outside those declarations so you only load it once rather than repeating it (causing unnecessary duplicate code in your compiled CSS).
 
