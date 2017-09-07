@@ -22,7 +22,7 @@ p {
 } 
 ```
 
-**Note**: You can load the animation definition either inside your CSS declaration or outside it. The reason I have kept these mixins separate and not included them in the animation call (step 2 above) is because they are quite a lot of lines of code, so if you are using the same animation on many different elements you may want to load the definition outside those declarations so you only load it once rather than repeating it (causing unnecessary duplicate code in your compiled CSS).
+**Note**: You can load the animation definition either inside your CSS declaration or outside it. The reason I have kept these mixins separate and not included them in the animation call (step 2 above) is because they are quite a lot of lines of code, so if you are using the same animation on many different elements you may want to load the definition outside those declarations so you only load it once rather than repeating it (thus avoiding unnecessary duplicate code in your compiled CSS).
 
 ## License
 Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT).
