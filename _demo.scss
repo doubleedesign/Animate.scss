@@ -1,0 +1,7 @@
+@import "animate.scss";
+
+p { 
+	@include keyframes-bounce;
+	@include bounce;
+	@include animate-infinite;
+}
