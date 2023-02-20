@@ -1,16 +1,16 @@
 # Animate.scss 
 *Just-add-water CSS animation by Dan Eden, Sassified.*
 
-`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness. This is a basic SCSS port so that you can have all animations available in a project, without increasing the size of the final compiled CSS with code you're not using. 
+`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness. 
 
-[Check out all the animations here!](https://daneden.github.io/animate.css/)
+_This is a basic SCSS port of a now-old version of Dan's original Animate.css, so it may not be fully up-to-date with all the options provided in his libary. Usage instructions are also different._
 
 ## Usage
-Because this version uses mixins, not classes, adding classes to your HTML won't work. To add an animation, you must call all the relevant mixins.
+Because this version uses mixins, not classes, just adding classes to your HTML won't work. To add an animation, you must call all the relevant mixins.
 
 1. Load the animation definition - `@include keyframes-animationName` (see note below)
 2. Call the animation - `@include animationName `
-3. Set it to infinite (optional) - `@include animate-infinite`
+3. If desired, set it to infinite (optional) - `@include animate-infinite`
 
 Example: 
 
